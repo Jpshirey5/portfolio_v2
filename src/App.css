@@ -1,0 +1,485 @@
+/* Shirey CSS */
+
+/* Loader */
+@keyframes loader_5191 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.loading {
+  color: black;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-top: 130px;
+  margin-left: -65px;
+}
+
+.square {
+  background: #F5CB5C;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+#sq1 {
+  margin-top: -25px;
+  margin-left: -25px;
+  animation: loader_5191 675ms ease-in-out 0s infinite alternate;
+}
+
+#sq2 {
+  margin-top: -25px;
+  animation: loader_5191 675ms ease-in-out 75ms infinite alternate;
+}
+
+#sq3 {
+  margin-top: -25px;
+  margin-left: 15px;
+  animation: loader_5191 675ms ease-in-out 150ms infinite;
+}
+
+#sq4 {
+  margin-left: -25px;
+  animation: loader_5191 675ms ease-in-out 225ms infinite;
+}
+
+#sq5 {
+  animation: loader_5191 675ms ease-in-out 300ms infinite;
+}
+
+#sq6 {
+  margin-left: 15px;
+  animation: loader_5191 675ms ease-in-out 375ms infinite;
+}
+
+#sq7 {
+  margin-top: 15px;
+  margin-left: -25px;
+  animation: loader_5191 675ms ease-in-out 450ms infinite;
+}
+
+#sq8 {
+  margin-top: 15px;
+  animation: loader_5191 675ms ease-in-out 525ms infinite;
+}
+
+#sq9 {
+  margin-top: 15px;
+  margin-left: 15px;
+  animation: loader_5191 675ms ease-in-out 600ms infinite;
+}
+
+/* Page Begins Here */
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-color: black;
+  min-height: 25vh;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header-title {
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.nav-bar img {
+  float: left;
+}
+
+.nav-bar ul {
+  float: right;
+  margin-right: 10px;
+
+}
+
+.nav-bar ul li {
+  display: inline-flex;
+  color: white;
+  line-height: 70px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.nav-bar ul li a:hover {
+  color: #F5CB5C;
+}
+
+/* Main Intro section */
+.main {
+  background-color: black;
+}
+
+.intro {
+  margin-left: 50px;
+  padding: 250px;
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #CFDBD5;
+  min-height: 75vh;
+}
+
+.intro h1 {
+  color: #F5CB5C;
+}
+
+/* About Section */
+
+#about {
+  color: black;
+  background-color: #E8EDDF;
+  padding: 250px;
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: -270px;
+  text-align: left;
+  min-height: 55vh;
+}
+
+.text {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#image {
+  float: right;
+  background-color: #E8EDDF;
+  margin-top: -250px;
+  padding: 10px;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+  color: #F5CB5C;
+  background-color: black;
+  padding: 100px;
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: -100px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 25%;
+  height: 50vh;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  margin-bottom: 50px;
+  font-size: 35px;
+  margin: 0 40px 40px 0;
+  background-color: #E8EDDF;
+  color: black;
+}
+
+.card-image {
+  width: 100%;
+  height: 50%;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.github {
+  color: black;
+  font-weight: 400;
+  font-size: 50px;
+  padding-top: 20px;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.link {
+  color: black;
+  font-weight: 400;
+  font-size: 50px;
+  padding-top: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Resume */
+.resume {
+  color: black;
+  background-color: #E8EDDF;
+  padding: 100px;
+  font-size: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 150px;
+  margin-left: -100px;
+  margin-bottom: -100px;
+  text-align: left;
+  justify-content: left;
+  width: 100%;
+  min-height: 45vh;
+}
+
+.resume_title {
+  margin-left: 100px;
+  margin-top: -70px;
+  color: black;
+}
+
+.resume_text {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 100px;
+}
+
+.resume_link {
+  margin-left: 350px;
+  margin-top: 20px;
+  color: black;
+}
+
+.resume_link:hover {
+  color: #F5CB5C;
+}
+
+/* Contact section */
+.singup {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5em;
+}
+
+.contact_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  width: 50%;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #e3e3e3;
+  box-shadow: 16px 16px 32px #F5CB5C,
+    -16px -16px 32px #F5CB5C;
+  border-radius: 8px;
+  margin-top: 200px;
+}
+
+.inputBox,
+.inputBox1 {
+  position: relative;
+  width: 250px;
+  height: 120px;
+}
+
+.inputBox input,
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 30px;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+
+.inputBox span,
+.inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.enter {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+  margin-top: 50px;
+}
+
+.enter:hover {
+  background-color: rgb(0, 0, 0);
+  color: #F5CB5C;
+}
+
+/* Footer */
+.footer {
+  max-height: 25vh;
+}
+
+.github_footer {
+  color: #F5CB5C;
+  font-weight: 400;
+  font-size: 50px;
+  padding-top: 20px;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.linkedin {
+  color: #F5CB5C;
+  font-weight: 400;
+  font-size: 50px;
+  padding-top: 20px;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.footer_tag {
+  font-size: 15px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer_nav-bar ul {
+  margin-right: 10px;
+
+}
+
+.footer_nav-bar ul li {
+  display: inline-flex;
+  color: white;
+  line-height: 70px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.footer_nav-bar ul li a {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #F5CB5C;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.footer_nav-bar ul li a:hover {
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Adjust styles for smaller screens */
+  .nav-bar ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .intro {
+    padding: 150px;
+  }
+
+  #about {
+    padding: 150px;
+  }
+
+  .portfolio {
+    padding: 50px;
+  }
+
+  .container {
+    margin: 50px 0;
+  }
+
+  .card {
+    width: 50%;
+  }
+
+  .resume {
+    padding: 50px;
+  }
+
+  .resume_title,
+  .resume_text {
+    margin-left: 50px;
+  }
+
+  .resume_link {
+    margin-left: 200px;
+  }
+
+  .contact_card {
+    width: 300px;
+    min-height: 250px;
+  }
+
+  .inputBox,
+  .inputBox1 {
+    width: 200px;
+  }
+}
