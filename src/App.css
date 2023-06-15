@@ -290,7 +290,7 @@ html {
   letter-spacing: 2px;
   display: block;
   font-weight: bold;
-  font-size: x-large;
+  font-size: 30px;
   margin-top: 1.5em;
 }
 
@@ -308,6 +308,15 @@ html {
     -16px -16px 32px #F5CB5C;
   border-radius: 8px;
   margin-top: 200px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
 }
 
 .inputBox,
