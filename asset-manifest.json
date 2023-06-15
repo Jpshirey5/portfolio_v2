@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_v2/static/css/main.d099bf3f.css",
-    "main.js": "/portfolio_v2/static/js/main.f51c1631.js",
+    "main.css": "/portfolio_v2/static/css/main.39450746.css",
+    "main.js": "/portfolio_v2/static/js/main.56ffa3c3.js",
     "static/js/787.d9a20797.chunk.js": "/portfolio_v2/static/js/787.d9a20797.chunk.js",
     "static/media/Local_Finds_SS.png": "/portfolio_v2/static/media/Local_Finds_SS.9a1ae401220dc285974d.png",
     "static/media/Weather_Dash_SS.png": "/portfolio_v2/static/media/Weather_Dash_SS.90e42d3b70d08ea0b2cd.png",
@@ -11,12 +11,12 @@
     "static/media/Master_Trader_SS.png": "/portfolio_v2/static/media/Master_Trader_SS.85584dfb4af4e8f613ca.png",
     "static/media/profile.jpg": "/portfolio_v2/static/media/profile.5198014f9ace078cf852.jpg",
     "index.html": "/portfolio_v2/index.html",
-    "main.d099bf3f.css.map": "/portfolio_v2/static/css/main.d099bf3f.css.map",
-    "main.f51c1631.js.map": "/portfolio_v2/static/js/main.f51c1631.js.map",
+    "main.39450746.css.map": "/portfolio_v2/static/css/main.39450746.css.map",
+    "main.56ffa3c3.js.map": "/portfolio_v2/static/js/main.56ffa3c3.js.map",
     "787.d9a20797.chunk.js.map": "/portfolio_v2/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d099bf3f.css",
-    "static/js/main.f51c1631.js"
+    "static/css/main.39450746.css",
+    "static/js/main.56ffa3c3.js"
   ]
 }
