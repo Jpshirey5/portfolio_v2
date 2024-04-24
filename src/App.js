@@ -12,26 +12,21 @@ export default function App() {
     <div className="App">
       
         <>
-          <div className="nav">
            <div className="main">
               <Main />
               <div className="about">
                 <About />
                   <div className="resume">
                     <Resume />
-                  
+                  </div>
                   <div className="contact">
                     <Contact />
-                  
+                  </div>
                   <div className="footer">
                     <Footer />
                   </div>
                   </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          
         </>
     </div>
   );
