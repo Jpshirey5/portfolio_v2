@@ -1,84 +1,7 @@
 /* Shirey CSS */
-
-/* Loader */
-@keyframes loader_5191 {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.loading {
-  color: black;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  margin-top: 130px;
-  margin-left: -65px;
-}
-
-.square {
-  background: #F5CB5C;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -5px;
-  margin-left: -5px;
-}
-
-#sq1 {
-  margin-top: -25px;
-  margin-left: -25px;
-  animation: loader_5191 675ms ease-in-out 0s infinite alternate;
-}
-
-#sq2 {
-  margin-top: -25px;
-  animation: loader_5191 675ms ease-in-out 75ms infinite alternate;
-}
-
-#sq3 {
-  margin-top: -25px;
-  margin-left: 15px;
-  animation: loader_5191 675ms ease-in-out 150ms infinite;
-}
-
-#sq4 {
-  margin-left: -25px;
-  animation: loader_5191 675ms ease-in-out 225ms infinite;
-}
-
-#sq5 {
-  animation: loader_5191 675ms ease-in-out 300ms infinite;
-}
-
-#sq6 {
-  margin-left: 15px;
-  animation: loader_5191 675ms ease-in-out 375ms infinite;
-}
-
-#sq7 {
-  margin-top: 15px;
-  margin-left: -25px;
-  animation: loader_5191 675ms ease-in-out 450ms infinite;
-}
-
-#sq8 {
-  margin-top: 15px;
-  animation: loader_5191 675ms ease-in-out 525ms infinite;
-}
-
-#sq9 {
-  margin-top: 15px;
-  margin-left: 15px;
-  animation: loader_5191 675ms ease-in-out 600ms infinite;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* Page Begins Here */
@@ -86,73 +9,104 @@ html {
   scroll-behavior: smooth;
 }
 
-.header {
-  background-color: black;
-  min-height: 25vh;
+.nav-bar {
+  background-color: #F1EFE7;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.header-title {
-  color: white;
-  text-align: center;
-  margin-top: 25px;
-}
-
-.nav-bar img {
-  float: left;
-}
-
 .nav-bar ul {
-  float: right;
-  margin-right: 10px;
-
+  margin: 0; /* Add this line to remove default margin */
+  padding: 0;
+  text-align: center;
+  background-color: #F1EFE7;
 }
 
 .nav-bar ul li {
   display: inline-flex;
-  color: white;
-  line-height: 70px;
-  margin-right: 50px;
-  margin-left: 50px;
+  color: black;
+  line-height: 100px;
 }
 
 .nav-bar ul li a {
-  color: white;
-  text-decoration: none;
-
+  color: black;
+  text-decoration: underline;
 }
 
 .nav-bar ul li a:hover {
-  color: #F5CB5C;
+  color: #FF6700;
 }
+
+/* Nav-Bar Buttons */
+button {
+  background: #F1EFE7;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 150px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+
 
 /* Main Intro section */
 .main {
-  background-color: black;
+  background-color: #F1EFE7;
 }
 
 .intro {
-  margin-left: 50px;
-  padding: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   font-family: 'Roboto Condensed', sans-serif;
   color: #CFDBD5;
-  min-height: 75vh;
-}
+  padding: 200px;
+  margin-top: -300px;
+  min-height: 100vh;
+  }
 
-.intro h1 {
-  color: #F5CB5C;
-}
 
 /* About Section */
 
 #about {
-  color: black;
-  background-color: #E8EDDF;
+  color: #FF6700;
+  background-color: black;
   padding: 250px;
   font-size: 30px;
   font-family: 'Roboto Condensed', sans-serif;
-  margin-top: -270px;
+  margin-top: -200px;
   text-align: left;
   min-height: 55vh;
 }
@@ -162,11 +116,12 @@ html {
   text-align: left;
   font-size: 20px;
   font-weight: 600;
+  color: #F1EFE7;
 }
 
 #image {
   float: right;
-  background-color: #E8EDDF;
+  background-color: #F1EFE7;
   margin-top: -250px;
   padding: 10px;
 }
@@ -175,7 +130,7 @@ html {
 /* Portfolio */
 
 .portfolio {
-  color: #F5CB5C;
+  color: #FF6700;
   background-color: black;
   padding: 100px;
   font-size: 30px;
@@ -210,7 +165,7 @@ html {
   margin-bottom: 50px;
   font-size: 35px;
   margin: 0 40px 40px 0;
-  background-color: #E8EDDF;
+  background-color: #F1EFE7;
   color: black;
 }
 
@@ -246,7 +201,7 @@ html {
 /* Resume */
 .resume {
   color: black;
-  background-color: #E8EDDF;
+  background-color: #F1EFE7;
   padding: 100px;
   font-size: 30px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -303,9 +258,9 @@ html {
   flex-direction: column;
   gap: 35px;
   border-radius: 15px;
-  background: #e3e3e3;
-  box-shadow: 16px 16px 32px #F5CB5C,
-    -16px -16px 32px #F5CB5C;
+  background-color: #F1EFE7;
+  box-shadow: 16px 16px 32px #FF6700,
+    -16px -16px 32px #FF6700;
   border-radius: 8px;
   margin-top: 200px;
 }
@@ -375,7 +330,7 @@ html {
 
 .enter:hover {
   background-color: rgb(0, 0, 0);
-  color: #F5CB5C;
+  color: #FF6700;
 }
 
 /* Footer */
@@ -384,7 +339,7 @@ html {
 }
 
 .github_footer {
-  color: #F5CB5C;
+  color: black;
   font-weight: 400;
   font-size: 50px;
   padding-top: 20px;
@@ -394,8 +349,12 @@ html {
   cursor: pointer;
 }
 
+.github_footer:hover {
+  color: #FF6700;
+}
+
 .linkedin {
-  color: #F5CB5C;
+  color: #F1EFE7;
   font-weight: 400;
   font-size: 50px;
   padding-top: 20px;
@@ -403,6 +362,10 @@ html {
   margin-top: 50px;
   margin-right: 35px;
   cursor: pointer;
+}
+
+.linkedin:hover {
+  color: #FF6700;
 }
 
 .footer_tag {
@@ -410,6 +373,7 @@ html {
   text-align: center;
   justify-content: center;
   margin-top: 30px;
+  color: #FF6700;
 }
 
 .footer_nav-bar ul {
@@ -419,7 +383,7 @@ html {
 
 .footer_nav-bar ul li {
   display: inline-flex;
-  color: white;
+  color: #F1EFE7;
   line-height: 70px;
   margin-right: 50px;
   margin-left: 50px;
@@ -429,15 +393,16 @@ html {
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: #F5CB5C;
+  color: #F1EFE7;
   text-decoration: none;
   font-size: 15px;
   font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: underline;
 
 }
 
 .footer_nav-bar ul li a:hover {
-  color: white;
+  color: #FF6700;
 }
 
 
